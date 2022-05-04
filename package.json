@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -p --progress --config webpack.config.build.js",
-    "development": "webpack-dev-server --progress --config webpack.config.development.js",
+    "development": "webpack serve --progress --config webpack.config.development.js",
     "start": "npm run development"
   },
   "repository": {
@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/realllsiyu/BYOCCSF#readme",
   "devDependencies": {
-    "webpack": "^5.72.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "mini-css-extract-plugin": "^2.6.0",
+    "webpack": "^2.1.0-beta.22",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1",
     "webpack-merge": "^5.8.0"
